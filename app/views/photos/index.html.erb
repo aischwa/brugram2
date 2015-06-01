@@ -4,5 +4,5 @@
   	<img><%= link_to image_tag(photo.image), photo_path(photo) %></img>
   	<!-- how does the above line turn the image into a link and how does it know to insert an image without img src =? -->
 	<p><%= photo.caption %></p>
-	<p><%= photo.comments %></p>
+	<p><b>Comments:</b> <%= photo.comments %></p>
 <% end %>
