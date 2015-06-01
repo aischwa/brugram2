@@ -3,6 +3,7 @@ class PhotosController < ApplicationController
 		@photos = Photo.all
 	end
 	def show
+		@photo = Photo.find(params[:id]) #copied this..what does params mean? How does ruby know to grab the corresponding spot in the array? Is :id related to the end of the url somehow?
 	end
 	def new
 	end

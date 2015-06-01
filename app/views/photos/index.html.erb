@@ -1,8 +1,8 @@
 <h1> BruGram | <a href= '/photos/create'>Upload Picture</a> </h1>
 
-<img style = "width:100px"/>
-
 <p><% @photos.each do |photo| %></p>
   	<img><%= link_to image_tag(photo.image), photo_path(photo) %></img>
+  	<!-- how does the above line turn the image into a link and how does it know to insert an image without img src =? -->
 	<p><%= photo.caption %></p>
+	<p><%= photo.comments %></p>
 <% end %>
